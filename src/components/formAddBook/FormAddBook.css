@@ -1,0 +1,44 @@
+form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+input {
+  width: 400px;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 10px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #4d4d4d;
+  color: #0d0c22;
+  transition: 0.3s ease;
+  color: white;
+}
+
+input::placeholder {
+  color: #9e9ea7;
+}
+
+input:hover {
+  color: black;
+}
+
+.bntAddLivro {
+  margin-top: 15px;
+  background-color: #444141;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+}

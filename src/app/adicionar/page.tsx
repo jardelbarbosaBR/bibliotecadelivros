@@ -1,5 +1,14 @@
-export default function pageAdcionarLivro(){
-    return<>
-        <h1>Pagina de adicionar livro</h1>
-        </>
+import FormAddBook from "@/components/formAddBook/FormAddBook";
+import "./style.css";
+export default function pageAdcionarLivro() {
+  return (
+    <>
+      <section>
+        <h1>Adicionar livro</h1>
+        <div className="content">
+          <FormAddBook></FormAddBook>
+        </div>
+      </section>
+    </>
+  );
 }

@@ -8,17 +8,34 @@ nav {
 }
 .logobutton {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  justify-content: start;
   align-items: center;
 }
 
 /* From Uiverse.io by LightAndy1 */
+
+.barraDePesquisa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.buttoEntrar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+}
+
 .group {
   display: flex;
   line-height: 28px;
+  justify-content: center;
   align-items: center;
   position: relative;
-  width: 40%;
+  width: 100%;
 }
 
 .input {
@@ -84,4 +101,38 @@ button:hover {
   to {
     background-position: 20vw;
   }
+}
+
+/* From Uiverse.io by adamgiebl */
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 167, 62, 1) 0%,
+    rgba(102, 247, 113, 1) 100%
+  );
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  height: 35px;
+}
+
+.cssbuttons-io-button svg {
+  margin-right: 2px;
+  width: 25px;
+}
+
+.cssbuttons-io-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
 }
