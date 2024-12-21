@@ -5,7 +5,7 @@ const books = [
     autor: "Autor 1",
     anoPublicacao: 2023,
     isbn: 12345678910111213,
-    imagemCapa: "https://www.sindilojaspelotas.com.br/Imagens/img.jpg",
+    imagemCapa: "https://m.media-amazon.com/images/I/81ibfYk4qmL._SL1500_.jpg",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const books = [
     autor: "Autor 2",
     anoPublicacao: 2023,
     isbn: 12345678910111213,
-    imagemCapa: "https://www.sindilojaspelotas.com.br/Imagens/img.jpg",
+    imagemCapa: "https://m.media-amazon.com/images/I/81ibfYk4qmL._SL1500_.jpg",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const books = [
     autor: "Autor 3",
     anoPublicacao: 2023,
     isbn: 12345678910111213,
-    imagemCapa: "https://www.sindilojaspelotas.com.br/Imagens/img.jpg",
+    imagemCapa: "https://m.media-amazon.com/images/I/81ibfYk4qmL._SL1500_.jpg",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const books = [
     autor: "Autor 4",
     anoPublicacao: 2023,
     isbn: 12345678910111213,
-    imagemCapa: "https://www.sindilojaspelotas.com.br/Imagens/img.jpg",
+    imagemCapa: "https://m.media-amazon.com/images/I/81ibfYk4qmL._SL1500_.jpg",
   },
 ];
 
