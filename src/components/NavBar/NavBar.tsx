@@ -45,7 +45,7 @@ export default function NavBar() {
         </div>
 
         <div className="buttoEntrar">
-          <Link href={"/auth"}>
+          <Link href={"/login"}>
             <button>Entrar</button>
           </Link>
         </div>

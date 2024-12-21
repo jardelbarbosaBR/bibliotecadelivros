@@ -3,7 +3,7 @@ import "./style.css";
 export default function pageAdcionarLivro() {
   return (
     <>
-      <section>
+      <section className="page-add-livro">
         <h1>Adicionar livro</h1>
         <div className="content">
           <FormAddBook></FormAddBook>

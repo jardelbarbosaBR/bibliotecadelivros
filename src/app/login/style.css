@@ -1,8 +1,10 @@
-.page-add-livro {
+.page-login {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
-  gap: 20px;
+}
+.page-description {
+  margin-bottom: 15px;
 }

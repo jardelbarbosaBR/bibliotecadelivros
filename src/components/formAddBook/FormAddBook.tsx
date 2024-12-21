@@ -10,7 +10,7 @@ export default function formAddBook() {
       titulo: e.target.title.value,
       autor: e.target.autor.value,
       anoPublicacao: parseInt(e.target.anoPublicacao.value),
-      isbn: e.target.isbn.value,
+      isbn: parseInt(e.target.isbn.value),
       imagemCapa: e.target.imagemCapa.value,
     };
 
