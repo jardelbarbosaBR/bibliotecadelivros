@@ -1,0 +1,31 @@
+.card-book {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding: 10px;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  gap: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-book-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-book-description-isbn {
+  margin-top: 10px;
+}
+
+.card-book-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.card-book-isbn {
+  font-style: italic;
+  color: #7a7a7a;
+}
