@@ -1,17 +1,25 @@
 import CardBook from "@/components/CardBook/CardBook";
-import books from "@/Service/api";
+
 import style from "./page.module.css";
+import { api } from "@/Service/LivroService";
 
 export async function generateStaticParams() {
-  return books.map((book) => ({
-    id: book.id.toString(),
+  const books = await api.get("/listar").then((response) => response.data);
+
+  return books.map((book: any) => ({
+    id: book.livroID.toString(),
   }));
 }
 
-export default async function livroPage({ params }: { params: any }) {
+export default async function livroPage({
+  params,
+}: {
+  params: { id: string };
+}) {
   const id = (await params).id;
 
-  const findBook = books.find((book) => book.id == id);
+  await new Promise((resolve) => setTimeout(resolve, 4000));
+  const findBook = await api.get(`/${id}`).then((response) => response.data);
 
   if (!findBook) {
     return (
@@ -25,7 +33,7 @@ export default async function livroPage({ params }: { params: any }) {
       <section className={style.containerDetalhesLivro}>
         <CardBook
           key={findBook.id}
-          title={findBook.title}
+          title={findBook.titulo}
           autor={findBook.autor}
           imagemCapa={findBook.imagemCapa}
           anoPublicacao={findBook.anoPublicacao}

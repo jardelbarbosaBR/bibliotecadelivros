@@ -1,20 +1,31 @@
 "use client";
 
+import { api } from "@/Service/LivroService";
 import "./FormAddBook.css";
+interface Livro {
+  titulo: string;
+  autor: string;
+  anoPublicacao: number;
+  isbn: number;
+  descricao: string;
+  imagemCapa: string;
+}
 
 export default function formAddBook() {
   const ano: Date = new Date();
-  function handlerFormAddLivro(e: any) {
+  async function handlerFormAddLivro(e: any) {
     e.preventDefault();
-    const dadosLivro = {
+    const dadosLivro: Livro = {
       titulo: e.target.title.value,
       autor: e.target.autor.value,
       anoPublicacao: parseInt(e.target.anoPublicacao.value),
       isbn: parseInt(e.target.isbn.value),
+      descricao:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id ipsum ultricies, pulvinar nunc sed, rutrum tellus. Maecenas tincidunt, nunc",
       imagemCapa: e.target.imagemCapa.value,
     };
 
-    console.log(dadosLivro);
+    const response = await api.post("/add", dadosLivro);
   }
   return (
     <>
@@ -41,7 +52,6 @@ export default function formAddBook() {
         <input
           type="text"
           name="isbn"
-          pattern="[0-9]"
           title="ISBN-13 é composto por 13 dígitos"
           placeholder="Ex: 9780470059029"
           maxLength={13}
